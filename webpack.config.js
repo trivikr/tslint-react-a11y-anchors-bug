@@ -14,6 +14,28 @@ var config = {
     rules: [
       {
         test: /\.tsx?$/,
+        enforce: "pre",
+        use: [
+          {
+            loader: "tslint-loader",
+            options: {
+              configuration: {
+                rules: {
+                  extends: ["tslint:recommended", "tslint-microsoft-contrib"]
+                }
+              },
+              configFile: false,
+              emitErrors: true,
+              failOnHint: true,
+              typeCheck: false,
+              fix: false,
+              tsConfigFile: "tsconfig.json"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.tsx?$/,
         loader: "ts-loader",
         exclude: /node_modules/
       }
