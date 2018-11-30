@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "jsx": "react",
-    "module": "commonjs"
+    "target": "ES2018",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react"
   },
   "exclude": ["node_modules"]
 }
