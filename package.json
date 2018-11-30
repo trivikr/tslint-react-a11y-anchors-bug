@@ -1,0 +1,25 @@
+{
+  "name": "tslint-react-a11y-anchors-bug",
+  "version": "1.0.0",
+  "description": "Minimal repository to repro a bug with TSLint react-a11y-anchors rule",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trivikr/tslint-react-a11y-anchors-bug.git"
+  },
+  "keywords": [
+    "tslint",
+    "typescript",
+    "react",
+    "react-a11y-anchors"
+  ],
+  "author": "Kamat, Trivikram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trivikr/tslint-react-a11y-anchors-bug/issues"
+  },
+  "homepage": "https://github.com/trivikr/tslint-react-a11y-anchors-bug#readme"
+}
