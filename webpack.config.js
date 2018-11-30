@@ -1,5 +1,6 @@
 var path = require("path");
 var config = {
+  mode: "development",
   entry: ["./app.tsx"],
   output: {
     path: path.resolve(__dirname, "build"),
@@ -10,7 +11,7 @@ var config = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
