@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/trivikr/tslint-react-a11y-anchors-bug#readme",
   "devDependencies": {
-    "typescript": "^3.2.1"
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.26.1"
   }
 }
