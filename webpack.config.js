@@ -20,9 +20,7 @@ var config = {
             loader: "tslint-loader",
             options: {
               configuration: {
-                rules: {
-                  extends: ["tslint:recommended", "tslint-microsoft-contrib"]
-                }
+                extends: ["tslint:recommended", "tslint-microsoft-contrib"]
               },
               configFile: false,
               emitErrors: true,
