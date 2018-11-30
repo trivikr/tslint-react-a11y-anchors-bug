@@ -1,5 +1,4 @@
 var path = require("path");
-const TSLintPlugin = require("tslint-webpack-plugin");
 var config = {
   mode: "development",
   entry: ["./app.tsx"],
@@ -15,16 +14,28 @@ var config = {
     rules: [
       {
         test: /\.tsx?$/,
+        enforce: "pre",
+        use: [
+          {
+            loader: "tslint-loader",
+            options: {
+              configFile: "tslint.json",
+              emitErrors: true,
+              failOnHint: true,
+              typeCheck: true,
+              fix: false,
+              tsConfigFile: "tsconfig.json"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.tsx?$/,
         loader: "ts-loader",
         exclude: /node_modules/
       }
     ]
-  },
-  plugins: [
-    new TSLintPlugin({
-      files: ["./app.tsx"]
-    })
-  ]
+  }
 };
 
 module.exports = config;
