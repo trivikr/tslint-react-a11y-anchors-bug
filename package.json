@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/trivikr/tslint-react-a11y-anchors-bug/issues"
   },
-  "homepage": "https://github.com/trivikr/tslint-react-a11y-anchors-bug#readme"
+  "homepage": "https://github.com/trivikr/tslint-react-a11y-anchors-bug#readme",
+  "devDependencies": {
+    "typescript": "^3.2.1"
+  }
 }
